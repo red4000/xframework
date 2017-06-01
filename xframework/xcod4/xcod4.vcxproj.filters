@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="framework">
+      <UniqueIdentifier>{44c9cbdb-315e-42da-9f7f-05922db866bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="framework\Source Files">
+      <UniqueIdentifier>{1f979a49-00ff-49a2-9dbd-849af2d99563}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="framework\Header Files">
+      <UniqueIdentifier>{e55b132f-2e13-444e-9cdc-c1932234e058}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="framework\crypt">
+      <UniqueIdentifier>{0418c5f1-ef14-4cb6-868b-aff5989872f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="render.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="autowall.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nospread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="prediction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="chams.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aimbot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\aim.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\antipb.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\clock.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\config.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\controlfp.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\crosshair.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\debug.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\detour.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\dodge.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\drender9.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\esp.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\framework.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\frender.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\hwbp.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\input.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\log.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\mt19937.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\radar.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\rcs.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\sesp.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\vftmanager.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\visual.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\vmath.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\warning.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\xgui.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\xguirender.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\crypt\dauth.cpp">
+      <Filter>framework\crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\crypt\dhash.cpp">
+      <Filter>framework\crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\crypt\KeccakF-1600-opt32.cpp">
+      <Filter>framework\crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\crypt\sha3.cpp">
+      <Filter>framework\crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\antidump.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\fcvars.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\memory.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\pattern.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cvars.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\framework\xmenu.cpp">
+      <Filter>framework\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hook.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="render.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="_game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nospread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="autowall.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="prediction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="chams.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aimbot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\_vector.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\aim.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\antipb.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\clock.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\config.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\controlfp.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\crosshair.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\debug.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\detour.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\dodge.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\drender.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\drender9.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\esp.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\framework.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\frender.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\hwbp.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\input.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\LDE64.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\log.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\radar.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\rcs.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\sesp.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\vftmanager.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\visual.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\vmath.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\warning.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\xgui.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\xguirender.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\tzar.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\mt19937.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\crypt\brg_endian.h">
+      <Filter>framework\crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\crypt\dauth.h">
+      <Filter>framework\crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\crypt\dhash.h">
+      <Filter>framework\crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\crypt\KeccakF-1600-interface.h">
+      <Filter>framework\crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\crypt\KeccakF-1600-int-set.h">
+      <Filter>framework\crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\crypt\KeccakF-1600-opt32-settings.h">
+      <Filter>framework\crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\crypt\sha3.h">
+      <Filter>framework\crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\antidump.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\fcvars.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\memory.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\pattern.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cvars.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\framework\xmenu.h">
+      <Filter>framework\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\framework\LDE64.lib">
+      <Filter>framework</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

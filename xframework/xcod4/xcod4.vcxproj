@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6A81CC79-86B3-4986-B99C-BE33F979DE24}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>xcod4</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)framework;$(SolutionDir)framework\crypt;D:\Program Files\Microsoft DirectX SDK (June 2010)\Include;E:\Program Files\Microsoft SDKs\Windows\v6.0A\Include;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include;$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)xcod4;$(SolutionDir)framework;$(SolutionDir)framework\crypt;D:\Program Files\Microsoft DirectX SDK (June 2010)\Include;D:\Program Files\Microsoft SDKs\Windows\v7.1A\Include;D:\Program Files\Microsoft Visual Studio 12.0\VC\crt\src;D:\Program Files\Microsoft Visual Studio 12.0\VC\include;$(WindowsSDK_IncludePath)</IncludePath>
+    <GenerateManifest>false</GenerateManifest>
+    <LibraryPath>$(SolutionDir)xcod4;d:\Program Files\Microsoft DirectX SDK (June 2010)\Lib\x86;D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\lib;D:\Program Files\Microsoft SDKs\Windows\v7.1A\Lib;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;XCOD4_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalDependencies>tzarmath.obj;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;XCOD4_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>psapi.lib;tzarmath.obj;d3d9.lib;d3dx9.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\framework\aim.cpp" />
+    <ClCompile Include="..\framework\antidump.cpp" />
+    <ClCompile Include="..\framework\antipb.cpp" />
+    <ClCompile Include="..\framework\clock.cpp" />
+    <ClCompile Include="..\framework\config.cpp" />
+    <ClCompile Include="..\framework\controlfp.cpp" />
+    <ClCompile Include="..\framework\crosshair.cpp" />
+    <ClCompile Include="..\framework\crypt\dauth.cpp" />
+    <ClCompile Include="..\framework\crypt\dhash.cpp" />
+    <ClCompile Include="..\framework\crypt\KeccakF-1600-opt32.cpp" />
+    <ClCompile Include="..\framework\crypt\sha3.cpp" />
+    <ClCompile Include="..\framework\debug.cpp" />
+    <ClCompile Include="..\framework\detour.cpp" />
+    <ClCompile Include="..\framework\dodge.cpp" />
+    <ClCompile Include="..\framework\drender9.cpp" />
+    <ClCompile Include="..\framework\esp.cpp" />
+    <ClCompile Include="..\framework\fcvars.cpp" />
+    <ClCompile Include="..\framework\framework.cpp" />
+    <ClCompile Include="..\framework\frender.cpp" />
+    <ClCompile Include="..\framework\hwbp.cpp" />
+    <ClCompile Include="..\framework\input.cpp" />
+    <ClCompile Include="..\framework\log.cpp" />
+    <ClCompile Include="..\framework\memory.cpp" />
+    <ClCompile Include="..\framework\mt19937.cpp" />
+    <ClCompile Include="..\framework\pattern.cpp" />
+    <ClCompile Include="..\framework\radar.cpp" />
+    <ClCompile Include="..\framework\rcs.cpp" />
+    <ClCompile Include="..\framework\sesp.cpp" />
+    <ClCompile Include="..\framework\vftmanager.cpp" />
+    <ClCompile Include="..\framework\visual.cpp" />
+    <ClCompile Include="..\framework\vmath.cpp" />
+    <ClCompile Include="..\framework\warning.cpp" />
+    <ClCompile Include="..\framework\xgui.cpp" />
+    <ClCompile Include="..\framework\xguirender.cpp" />
+    <ClCompile Include="..\framework\xmenu.cpp" />
+    <ClCompile Include="aimbot.cpp" />
+    <ClCompile Include="autowall.cpp" />
+    <ClCompile Include="chams.cpp" />
+    <ClCompile Include="cvars.cpp" />
+    <ClCompile Include="game.cpp" />
+    <ClCompile Include="hack.cpp" />
+    <ClCompile Include="hook.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="menu.cpp" />
+    <ClCompile Include="nospread.cpp" />
+    <ClCompile Include="prediction.cpp" />
+    <ClCompile Include="render.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\framework\aim.h" />
+    <ClInclude Include="..\framework\antidump.h" />
+    <ClInclude Include="..\framework\antipb.h" />
+    <ClInclude Include="..\framework\clock.h" />
+    <ClInclude Include="..\framework\config.h" />
+    <ClInclude Include="..\framework\controlfp.h" />
+    <ClInclude Include="..\framework\crosshair.h" />
+    <ClInclude Include="..\framework\crypt\brg_endian.h" />
+    <ClInclude Include="..\framework\crypt\dauth.h" />
+    <ClInclude Include="..\framework\crypt\dhash.h" />
+    <ClInclude Include="..\framework\crypt\KeccakF-1600-int-set.h" />
+    <ClInclude Include="..\framework\crypt\KeccakF-1600-interface.h" />
+    <ClInclude Include="..\framework\crypt\KeccakF-1600-opt32-settings.h" />
+    <ClInclude Include="..\framework\crypt\sha3.h" />
+    <ClInclude Include="..\framework\debug.h" />
+    <ClInclude Include="..\framework\detour.h" />
+    <ClInclude Include="..\framework\dodge.h" />
+    <ClInclude Include="..\framework\drender.h" />
+    <ClInclude Include="..\framework\drender9.h" />
+    <ClInclude Include="..\framework\esp.h" />
+    <ClInclude Include="..\framework\fcvars.h" />
+    <ClInclude Include="..\framework\framework.h" />
+    <ClInclude Include="..\framework\frender.h" />
+    <ClInclude Include="..\framework\hwbp.h" />
+    <ClInclude Include="..\framework\input.h" />
+    <ClInclude Include="..\framework\LDE64.h" />
+    <ClInclude Include="..\framework\log.h" />
+    <ClInclude Include="..\framework\memory.h" />
+    <ClInclude Include="..\framework\mt19937.h" />
+    <ClInclude Include="..\framework\pattern.h" />
+    <ClInclude Include="..\framework\radar.h" />
+    <ClInclude Include="..\framework\rcs.h" />
+    <ClInclude Include="..\framework\sesp.h" />
+    <ClInclude Include="..\framework\tzar.h" />
+    <ClInclude Include="..\framework\vftmanager.h" />
+    <ClInclude Include="..\framework\visual.h" />
+    <ClInclude Include="..\framework\vmath.h" />
+    <ClInclude Include="..\framework\warning.h" />
+    <ClInclude Include="..\framework\xgui.h" />
+    <ClInclude Include="..\framework\xguirender.h" />
+    <ClInclude Include="..\framework\xmenu.h" />
+    <ClInclude Include="..\framework\_vector.h" />
+    <ClInclude Include="aimbot.h" />
+    <ClInclude Include="autowall.h" />
+    <ClInclude Include="chams.h" />
+    <ClInclude Include="cvars.h" />
+    <ClInclude Include="game.h" />
+    <ClInclude Include="hack.h" />
+    <ClInclude Include="hook.h" />
+    <ClInclude Include="menu.h" />
+    <ClInclude Include="nospread.h" />
+    <ClInclude Include="prediction.h" />
+    <ClInclude Include="render.h" />
+    <ClInclude Include="_game.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\framework\LDE64.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
